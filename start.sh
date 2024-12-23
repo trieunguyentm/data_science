@@ -1,0 +1,1 @@
+docker run -d -p 8501:8501 --name churn-app streamlit-churn-app
