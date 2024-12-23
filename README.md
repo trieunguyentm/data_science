@@ -1,23 +1,32 @@
-### Config enviroment
-* Create .env
-```python3 -m venv .env```
-* Enable enviroment
-```source .env/bin/active```
+## There are two ways to run the project
 
-### Install dependencies
-* Install lib
-```pip3 install -r requirements.txt```
+### 1. Run by install denpendencies and run app streamlit
 
-### Run app
-* Run
-```streamlit run demo_churn.py```
+#### Create enviroment
 
-### Run app by Docker
-* Build Docker Image from Dockerfile
-```docker build -t streamlit-churn-app```
-* Run Docker Image
-```docker run -d -p 8501:8501 --name churn-app streamlit-churn-app```
-* Test app
-```Access: http://localhost:8051```
+- Create .env
+  `python3 -m venv .env`
+- Enable enviroment
+  `source .env/bin/active`
 
+#### Install dependencies
 
+- Install lib
+  `pip3 install -r requirements.txt`
+
+#### Run app
+
+- Run
+  `streamlit run demo_churn.py`
+
+### 2. Run by docker
+
+#### Build docker image and run container
+
+- Build Docker Image from Dockerfile
+  `docker build -t streamlit-churn-app`
+
+- Run Docker Image
+  `docker run -d -p 8501:8501 --name churn-app streamlit-churn-app`
+- Test app
+  `Access: http://localhost:8051`
